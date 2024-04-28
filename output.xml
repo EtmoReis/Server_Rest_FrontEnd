@@ -1,225 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-28T15:14:42.352823" rpa="false" schemaversion="5">
-<suite id="s1" name="GET out page serverest" source="c:\Users\etmom\Desktop\Serverest_front\tests\GET_out_page_serverest.robot">
-<test id="s1-t1" name="CT01- logout page" line="9">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-28T16:24:38.792360" rpa="false" schemaversion="5">
+<suite id="s1" name="Acess Serverest" source="c:\Users\etmom\Desktop\Serverest_front\tests\acess_serverest.robot">
+<test id="s1-t1" name="CT01- ACESSAR ServeRest" line="5">
 <kw name="Step 1 -Acess page creat user ServeRest" owner="acess_serverest">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:43.129689" level="INFO">Opening browser 'Firefox' to base url 'https://front.serverest.dev/login'.</msg>
+<msg time="2024-04-28T16:24:39.158349" level="INFO">Opening browser 'Firefox' to base url 'https://front.serverest.dev/login'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-28T15:14:43.128691" elapsed="10.549107"/>
+<status status="PASS" start="2024-04-28T16:24:39.157371" elapsed="8.544979"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${CADASTRE-SE}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-28T15:14:53.699588" elapsed="0.089546"/>
+<status status="PASS" start="2024-04-28T16:24:47.703376" elapsed="0.035021"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:53.791134" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
+<msg time="2024-04-28T16:24:47.739398" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
 <arg>locator=${CADASTRE-SE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:53.790135" elapsed="0.291948"/>
+<status status="PASS" start="2024-04-28T16:24:47.739398" elapsed="0.267773"/>
 </kw>
-<status status="PASS" start="2024-04-28T15:14:43.127687" elapsed="10.956394"/>
+<status status="PASS" start="2024-04-28T16:24:39.156344" elapsed="8.850827"/>
 </kw>
 <kw name=" Step 2 - Create New User Full Name" owner="acess_serverest">
 <kw name="Generate Random String" owner="String">
-<msg time="2024-04-28T15:14:54.097096" level="INFO">${palavra_randomica} = mxrtZqiT</msg>
+<msg time="2024-04-28T16:24:48.011177" level="INFO">${palavra_randomica} = uNAlUgiq</msg>
 <var>${palavra_randomica}</var>
 <arg>length=8</arg>
 <arg>chars=[LETTERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.096096" elapsed="0.001999"/>
+<status status="PASS" start="2024-04-28T16:24:48.010181" elapsed="0.000996"/>
 </kw>
 <kw name="Convert To Lower Case" owner="String">
-<msg time="2024-04-28T15:14:54.098095" level="INFO">${palavra_randomica} = mxrtzqit</msg>
+<msg time="2024-04-28T16:24:48.012173" level="INFO">${palavra_randomica} = unalugiq</msg>
 <var>${palavra_randomica}</var>
 <arg>${palavra_randomica}</arg>
 <doc>Converts string to lower case.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.098095" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-28T16:24:48.012173" elapsed="0.001082"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-28T15:14:54.106487" level="INFO">${FULL_NAME} = Mmxrtzqit dos Santos</msg>
+<msg time="2024-04-28T16:24:48.016174" level="INFO">${FULL_NAME} = Munalugiq dos Santos</msg>
 <arg>${FULL_NAME}</arg>
 <arg>M${palavra_randomica} dos Santos</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.099097" elapsed="0.008547"/>
+<status status="PASS" start="2024-04-28T16:24:48.013255" elapsed="0.004994"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-04-28T15:14:54.108655" level="INFO">Mmxrtzqit dos Santos</msg>
+<msg time="2024-04-28T16:24:48.019176" level="INFO">Munalugiq dos Santos</msg>
 <arg>${FULL_NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.107644" elapsed="0.001011"/>
+<status status="PASS" start="2024-04-28T16:24:48.019176" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:54.110666" level="INFO">Typing text 'Mmxrtzqit dos Santos' into text field '//input[contains(@name,'nome')]'.</msg>
+<msg time="2024-04-28T16:24:48.021208" level="INFO">Typing text 'Munalugiq dos Santos' into text field '//input[contains(@name,'nome')]'.</msg>
 <arg>${INPUT_FULLNAME}</arg>
 <arg>${FULL_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.109655" elapsed="0.185793"/>
+<status status="PASS" start="2024-04-28T16:24:48.020176" elapsed="0.109538"/>
 </kw>
-<status status="PASS" start="2024-04-28T15:14:54.094097" elapsed="0.202356"/>
+<status status="PASS" start="2024-04-28T16:24:48.009181" elapsed="0.120533"/>
 </kw>
 <kw name=" Step 3 - Create New User Mail" owner="acess_serverest">
 <kw name="Generate Random String" owner="String">
-<msg time="2024-04-28T15:14:54.299457" level="INFO">${palavra_randomica} = yBmhpepS</msg>
+<msg time="2024-04-28T16:24:48.131701" level="INFO">${palavra_randomica} = RILLkmhh</msg>
 <var>${palavra_randomica}</var>
 <arg>length=8</arg>
 <arg>chars=[LETTERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.299457" elapsed="0.000994"/>
+<status status="PASS" start="2024-04-28T16:24:48.130703" elapsed="0.000998"/>
 </kw>
 <kw name="Convert To Lower Case" owner="String">
-<msg time="2024-04-28T15:14:54.301455" level="INFO">${palavra_randomica} = ybmhpeps</msg>
+<msg time="2024-04-28T16:24:48.132702" level="INFO">${palavra_randomica} = rillkmhh</msg>
 <var>${palavra_randomica}</var>
 <arg>${palavra_randomica}</arg>
 <doc>Converts string to lower case.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.300451" elapsed="0.001004"/>
+<status status="PASS" start="2024-04-28T16:24:48.131701" elapsed="0.001001"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-28T15:14:54.304450" level="INFO">${MAIL} = ybmhpeps@gmail.com</msg>
+<msg time="2024-04-28T16:24:48.133702" level="INFO">${MAIL} = rillkmhh@gmail.com</msg>
 <arg>${MAIL}</arg>
 <arg>${palavra_randomica}@gmail.com</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.302450" elapsed="0.002000"/>
+<status status="PASS" start="2024-04-28T16:24:48.133702" elapsed="0.000998"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-04-28T15:14:54.305452" level="INFO">ybmhpeps@gmail.com</msg>
+<msg time="2024-04-28T16:24:48.134700" level="INFO">rillkmhh@gmail.com</msg>
 <arg>${MAIL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.305452" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-28T16:24:48.134700" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:54.306452" level="INFO">Typing text 'ybmhpeps@gmail.com' into text field '//input[contains(@name,'email')]'.</msg>
+<msg time="2024-04-28T16:24:48.135701" level="INFO">Typing text 'rillkmhh@gmail.com' into text field '//input[contains(@name,'email')]'.</msg>
 <arg>${INPUT_MAIL}</arg>
 <arg>${MAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.306452" elapsed="0.079140"/>
+<status status="PASS" start="2024-04-28T16:24:48.135701" elapsed="0.038004"/>
 </kw>
-<status status="PASS" start="2024-04-28T15:14:54.298451" elapsed="0.088141"/>
+<status status="PASS" start="2024-04-28T16:24:48.130703" elapsed="0.043002"/>
 </kw>
 <kw name=" Step 4- Create New Password" owner="acess_serverest">
 <kw name="Generate Random String" owner="String">
-<msg time="2024-04-28T15:14:54.389591" level="INFO">${palavra_randomica} = kK</msg>
+<msg time="2024-04-28T16:24:48.175716" level="INFO">${palavra_randomica} = wb</msg>
 <var>${palavra_randomica}</var>
 <arg>length=2</arg>
 <arg>chars=[LETTERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.388591" elapsed="0.001000"/>
+<status status="PASS" start="2024-04-28T16:24:48.175716" elapsed="0.000000"/>
 </kw>
 <kw name="Convert To Lower Case" owner="String">
-<msg time="2024-04-28T15:14:54.390590" level="INFO">${palavra_randomica} = kk</msg>
+<msg time="2024-04-28T16:24:48.176707" level="INFO">${palavra_randomica} = wb</msg>
 <var>${palavra_randomica}</var>
 <arg>${palavra_randomica}</arg>
 <doc>Converts string to lower case.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.390590" elapsed="0.001002"/>
+<status status="PASS" start="2024-04-28T16:24:48.175716" elapsed="0.000991"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-28T15:14:54.393596" level="INFO">${PASSWORD} = Test@1234</msg>
+<msg time="2024-04-28T16:24:48.177707" level="INFO">${PASSWORD} = Test@1234</msg>
 <arg>${PASSWORD}</arg>
 <arg>Test@1234</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.391592" elapsed="0.003001"/>
+<status status="PASS" start="2024-04-28T16:24:48.176707" elapsed="0.001000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-04-28T15:14:54.395591" level="INFO">Test@1234</msg>
+<msg time="2024-04-28T16:24:48.177707" level="INFO">Test@1234</msg>
 <arg>${PASSWORD}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.394593" elapsed="0.000998"/>
+<status status="PASS" start="2024-04-28T16:24:48.177707" elapsed="0.000998"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:54.396590" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
-<msg time="2024-04-28T15:14:54.412463" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-04-28T16:24:48.178705" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
+<msg time="2024-04-28T16:24:48.186219" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${IMPUT_PASSWORD}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.396590" elapsed="0.068913"/>
+<status status="PASS" start="2024-04-28T16:24:48.178705" elapsed="0.034055"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:54.467505" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
-<msg time="2024-04-28T15:14:54.497962" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-04-28T16:24:48.212760" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
+<msg time="2024-04-28T16:24:48.228761" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${IMPUT_PASSWORD}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.466504" elapsed="0.087871"/>
+<status status="PASS" start="2024-04-28T16:24:48.212760" elapsed="0.041001"/>
 </kw>
-<status status="PASS" start="2024-04-28T15:14:54.387593" elapsed="0.166782"/>
+<status status="PASS" start="2024-04-28T16:24:48.174708" elapsed="0.079053"/>
 </kw>
 <kw name=" Step 5- Select ADM" owner="acess_serverest">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:54.559714" level="INFO">Clicking element '//input[contains(@name,'administrador')]'.</msg>
+<msg time="2024-04-28T16:24:48.255761" level="INFO">Clicking element '//input[contains(@name,'administrador')]'.</msg>
 <arg>locator=//input[contains(@name,'administrador')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.558715" elapsed="0.249549"/>
+<status status="PASS" start="2024-04-28T16:24:48.254797" elapsed="0.236178"/>
 </kw>
-<status status="PASS" start="2024-04-28T15:14:54.556711" elapsed="0.255591"/>
+<status status="PASS" start="2024-04-28T16:24:48.254797" elapsed="0.237260"/>
 </kw>
 <kw name=" Step 6- Creat New" owner="acess_serverest">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:54.817755" level="INFO">Clicking button '//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]'.</msg>
+<msg time="2024-04-28T16:24:48.495025" level="INFO">Clicking button '//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]'.</msg>
 <arg>locator=//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:54.816304" elapsed="0.246759"/>
+<status status="PASS" start="2024-04-28T16:24:48.495025" elapsed="0.268350"/>
 </kw>
-<status status="PASS" start="2024-04-28T15:14:54.814304" elapsed="0.249752"/>
+<status status="PASS" start="2024-04-28T16:24:48.493984" elapsed="0.269391"/>
 </kw>
-<kw name="Step 8- Keep out page" owner="out _page_serverest">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=//a[@data-testid='relatorios'][contains(.,'Ver')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-28T15:14:55.066561" elapsed="3.759977"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:14:58.829542" level="INFO">Clicking element '//a[@data-testid='relatorios'][contains(.,'Ver')]'.</msg>
-<arg>locator=//a[@data-testid='relatorios'][contains(.,'Ver')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:14:58.828538" elapsed="0.248916"/>
-</kw>
+<kw name=" Step 7- Verify Create user is true" owner="acess_serverest">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>text=Em construção aguarde</arg>
+<arg>Cadastro realizado com sucesso</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-28T15:14:59.079920" elapsed="0.015196"/>
+<status status="PASS" start="2024-04-28T16:24:48.767377" elapsed="0.629744"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-28T15:15:04.102594" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-28T15:14:59.097113" elapsed="5.007723"/>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//div[@class='alert alert-dismissible alert-primary'][contains(.,'×Cadastro realizado com sucesso')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-28T16:24:49.398121" elapsed="0.007100"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:15:04.107773" level="INFO">Clicking element '//a[@data-testid='home'][contains(.,'Home')]'.</msg>
-<arg>locator=//a[@data-testid='home'][contains(.,'Home')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:15:04.105775" elapsed="0.264167"/>
+<status status="PASS" start="2024-04-28T16:24:48.765321" elapsed="0.640907"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-28T15:15:09.372013" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-28T15:15:04.370941" elapsed="5.003443"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T15:15:09.376992" level="INFO">Clicking element '//button[@data-testid='logout'][contains(.,'Logout')]'.</msg>
-<arg>locator=//button[@data-testid='logout'][contains(.,'Logout')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T15:15:09.375419" elapsed="0.245703"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-28T15:15:14.623243" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-28T15:15:09.622119" elapsed="5.002672"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-28T15:15:14.627787" elapsed="4.058343"/>
-</kw>
-<status status="PASS" start="2024-04-28T15:14:55.066055" elapsed="23.622098"/>
-</kw>
-<status status="PASS" start="2024-04-28T15:14:43.125680" elapsed="35.567470"/>
+<status status="PASS" start="2024-04-28T16:24:39.155366" elapsed="10.251986"/>
 </test>
-<status status="PASS" start="2024-04-28T15:14:42.366342" elapsed="36.353838"/>
+<status status="PASS" start="2024-04-28T16:24:38.799371" elapsed="10.611484"/>
 </suite>
 <statistics>
 <total>
@@ -228,7 +188,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="GET out page serverest">GET out page serverest</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Acess Serverest">Acess Serverest</stat>
 </suite>
 </statistics>
 <errors>
