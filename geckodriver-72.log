@@ -1,0 +1,18 @@
+1714310387981	geckodriver	INFO	Listening on 127.0.0.1:50828
+1714310391092	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50829" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\etmom\\AppData\\Local\\Temp\\rust_mozprofileDEl5a0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1714310391853	Marionette	INFO	Marionette enabled
+1714310392028	Marionette	INFO	Listening on port 50838
+WebDriver BiDi listening on ws://127.0.0.1:50829
+Read port: 50838
+1714310392377	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50829/devtools/browser/5162f22e-9a0a-4457-a986-e193b6603bc2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+1714310423416	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1714310469148	Marionette	INFO	Stopped listening on port 50838
+Dynamically enable window occlusion 1

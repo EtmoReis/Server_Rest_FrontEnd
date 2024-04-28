@@ -1,0 +1,19 @@
+1714299553806	geckodriver	INFO	Listening on 127.0.0.1:59106
+1714299556930	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59107" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\etmom\\AppData\\Local\\Temp\\rust_mozprofile3iVdKw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1714299557603	Marionette	INFO	Marionette enabled
+1714299557791	Marionette	INFO	Listening on port 59114
+WebDriver BiDi listening on ws://127.0.0.1:59107
+Read port: 59114
+1714299558053	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59107/devtools/browser/c9b4cffc-7e27-47b4-b0c3-bc92f275ac77
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+1714299588572	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1714299858933	Marionette	INFO	Stopped listening on port 59114
+Dynamically enable window occlusion 1

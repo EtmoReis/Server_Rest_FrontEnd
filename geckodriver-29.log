@@ -1,0 +1,16 @@
+1714295984192	geckodriver	INFO	Listening on 127.0.0.1:57042
+1714295987250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\etmom\\AppData\\Local\\Temp\\rust_mozprofileMlehtR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1714295987777	Marionette	INFO	Marionette enabled
+1714295987932	Marionette	INFO	Listening on port 57051
+WebDriver BiDi listening on ws://127.0.0.1:57043
+Read port: 57051
+1714295988254	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57043/devtools/browser/4a484ede-0c7a-47a1-ba75-b7f15bd938c2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
+1714296009886	Marionette	INFO	Stopped listening on port 57051
+Dynamically enable window occlusion 1
