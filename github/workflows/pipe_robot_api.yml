@@ -35,7 +35,7 @@ jobs:
         path: ./results
 
 
-- name: Subindo Pagina Web com Resultados 
+    - name: Subindo Pagina Web com Resultados 
         id: deployment
         uses: actions/deploy-pages@v1
         if: always()
