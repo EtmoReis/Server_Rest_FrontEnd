@@ -14,3 +14,5 @@ console.error: ({})
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://front.serverest.dev."
 1714319845139	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1714319965907	Marionette	INFO	Stopped listening on port 57001
+Dynamically enable window occlusion 1
