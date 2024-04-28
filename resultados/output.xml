@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-28T13:45:48.679069" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\etmom\Desktop\Serverest_front\tests">
+<suite id="s1-s1" name="POST cadastrar produtos" source="C:\Users\etmom\Desktop\Serverest_front\tests\POST_cadastrar_produtos.robot">
+<test id="s1-s1-t1" name="CT01-CADASTRAR NOVO PRODUTO ServeRest" line="7">
+<kw name="Step 1 -Acess page creat user ServeRest" owner="acess_serverest">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:45:49.565430" level="INFO">Opening browser 'Firefox' to base url 'https://front.serverest.dev/login'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-28T13:45:49.564423" elapsed="10.799629"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${CADASTRE-SE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.370587" elapsed="0.055733"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:00.427827" level="INFO">Clicking element '//a[@data-testid='cadastrar'][contains(.,'Cadastre-se')]'.</msg>
+<arg>locator=${CADASTRE-SE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.427827" elapsed="0.254483"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:45:49.562351" elapsed="11.121314"/>
+</kw>
+<kw name=" Step 2 - Create New User Full Name" owner="acess_serverest">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-04-28T13:46:00.689921" level="INFO">${palavra_randomica} = QuxqzyOX</msg>
+<var>${palavra_randomica}</var>
+<arg>length=8</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.688912" elapsed="0.001009"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-04-28T13:46:00.689921" level="INFO">${palavra_randomica} = quxqzyox</msg>
+<var>${palavra_randomica}</var>
+<arg>${palavra_randomica}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.689921" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-04-28T13:46:00.692986" level="INFO">${FULL_NAME} = Mquxqzyox dos Santos</msg>
+<arg>${FULL_NAME}</arg>
+<arg>M${palavra_randomica} dos Santos</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.690920" elapsed="0.002066"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-28T13:46:00.693984" level="INFO">Mquxqzyox dos Santos</msg>
+<arg>${FULL_NAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.693984" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:00.694988" level="INFO">Typing text 'Mquxqzyox dos Santos' into text field '//input[contains(@name,'nome')]'.</msg>
+<arg>${INPUT_FULLNAME}</arg>
+<arg>${FULL_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.694988" elapsed="0.128154"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:46:00.686914" elapsed="0.136228"/>
+</kw>
+<kw name=" Step 3 - Create New User Mail" owner="acess_serverest">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-04-28T13:46:00.825148" level="INFO">${palavra_randomica} = WhIAKqTJ</msg>
+<var>${palavra_randomica}</var>
+<arg>length=8</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.825148" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-04-28T13:46:00.826141" level="INFO">${palavra_randomica} = whiakqtj</msg>
+<var>${palavra_randomica}</var>
+<arg>${palavra_randomica}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.825148" elapsed="0.000993"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-04-28T13:46:00.827628" level="INFO">${MAIL} = whiakqtj@gmail.com</msg>
+<arg>${MAIL}</arg>
+<arg>${palavra_randomica}@gmail.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.826141" elapsed="0.001487"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-28T13:46:00.828934" level="INFO">whiakqtj@gmail.com</msg>
+<arg>${MAIL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.828934" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:00.831969" level="INFO">Typing text 'whiakqtj@gmail.com' into text field '//input[contains(@name,'email')]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.830972" elapsed="0.064040"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:46:00.824142" elapsed="0.070870"/>
+</kw>
+<kw name=" Step 4- Create New Password" owner="acess_serverest">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-04-28T13:46:00.896024" level="INFO">${palavra_randomica} = Cg</msg>
+<var>${palavra_randomica}</var>
+<arg>length=2</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.896024" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-04-28T13:46:00.897021" level="INFO">${palavra_randomica} = cg</msg>
+<var>${palavra_randomica}</var>
+<arg>${palavra_randomica}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.897021" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-04-28T13:46:00.897021" level="INFO">${PASSWORD} = Test@1234</msg>
+<arg>${PASSWORD}</arg>
+<arg>Test@1234</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.897021" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-28T13:46:00.897021" level="INFO">Test@1234</msg>
+<arg>${PASSWORD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.897021" elapsed="0.001000"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:00.898021" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
+<msg time="2024-04-28T13:46:00.904644" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${IMPUT_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.898021" elapsed="0.041493"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:00.940509" level="INFO">Typing password into text field '//input[contains(@name,'password')]'.</msg>
+<msg time="2024-04-28T13:46:00.959027" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${IMPUT_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:00.940509" elapsed="0.060201"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:46:00.896024" elapsed="0.104686"/>
+</kw>
+<kw name=" Step 5- Select ADM" owner="acess_serverest">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:01.002378" level="INFO">Clicking element '//input[contains(@name,'administrador')]'.</msg>
+<arg>locator=//input[contains(@name,'administrador')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:01.002378" elapsed="0.248619"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:46:01.000710" elapsed="0.250287"/>
+</kw>
+<kw name=" Step 6- Creat New" owner="acess_serverest">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:01.251996" level="INFO">Clicking button '//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]'.</msg>
+<arg>locator=//button[@data-testid='cadastrar'][contains(.,'Cadastrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:01.251996" elapsed="0.223702"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:46:01.250997" elapsed="0.224701"/>
+</kw>
+<kw name="Step 7- Acess page a new Product" owner="cadastrar_produtos">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//a[@data-testid='cadastrar-produtos'][contains(.,'Cadastrar Produtos')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-28T13:46:01.476682" elapsed="3.910643"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:05.389326" level="INFO">Clicking element '//a[@data-testid='cadastrar-produtos'][contains(.,'Cadastrar Produtos')]'.</msg>
+<arg>//a[@data-testid='cadastrar-produtos'][contains(.,'Cadastrar Produtos')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:05.388327" elapsed="0.244570"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:46:01.475698" elapsed="4.157199"/>
+</kw>
+<kw name="Step 8- Input information Product" owner="cadastrar_produtos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:05.634899" level="INFO">Typing text ' Play Station 5' into text field '//input[contains(@name,'nome')]'.</msg>
+<arg>locator=//input[contains(@name,'nome')]</arg>
+<arg>text= Play Station 5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:05.633898" elapsed="0.082266"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:05.716164" level="INFO">Typing text ' 5500' into text field '//input[contains(@name,'price')]'.</msg>
+<arg>locator=//input[contains(@name,'price')]</arg>
+<arg>text= 5500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:05.716164" elapsed="0.043348"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:05.760513" level="INFO">Typing text ' Este PlayStation 5 (PS5) é seminovo, mas está em excelente estado e vem na caixa original. Ele oferece gráficos de última geração, desempenho rápido e recursos inovadores. Inclui console PS5, controle sem fio DualSense e todos os cabos necessários.Observação: Como o console é seminovo, a garantia de fábrica pode não estar mais disponível. No entanto, o console foi testado e está funcionando perfeitamente.Contato para compra: [etmo.gmail.com]' into text field '//textarea[contains(@name,'description')]'.</msg>
+<arg>locator=//textarea[contains(@name,'description')]</arg>
+<arg>text= Este PlayStation 5 (PS5) é seminovo, mas está em excelente estado e vem na caixa original. Ele oferece gráficos de última geração, desempenho rápido e recursos inovadores. Inclui console PS5, controle sem fio DualSense e todos os cabos necessários.Observação: Como o console é seminovo, a garantia de fábrica pode não estar mais disponível. No entanto, o console foi testado e está funcionando perfeitamente.Contato para compra: [etmo.gmail.com]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:05.759512" elapsed="0.363563"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:06.126073" level="INFO">Typing text ' 2' into text field '//input[contains(@name,'quantity')]'.</msg>
+<arg>locator=//input[contains(@name,'quantity')]</arg>
+<arg>text= 2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:06.126073" elapsed="0.229185"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=//input[contains(@name,'imagem')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-28T13:46:06.355258" elapsed="0.016961"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:06.373227" level="INFO">Sending C:\Users\etmom\Desktop\Nova pasta\ps5.png to browser.</msg>
+<arg>locator=//input[contains(@name,'imagem')]</arg>
+<arg>file_path=${file_path}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:06.372219" elapsed="0.015221"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T13:46:06.387440" level="INFO">Double clicking element '//button[@data-testid='cadastarProdutos'][contains(.,'Cadastrar')]'.</msg>
+<arg>locator=//button[@data-testid='cadastarProdutos'][contains(.,'Cadastrar')]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T13:46:06.387440" elapsed="0.360576"/>
+</kw>
+<status status="PASS" start="2024-04-28T13:46:05.633898" elapsed="1.114118"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-04-28T13:45:49.561325" elapsed="17.192072"/>
+</test>
+<status status="PASS" start="2024-04-28T13:45:48.720439" elapsed="18.047943"/>
+</suite>
+<status status="PASS" start="2024-04-28T13:45:48.682048" elapsed="18.090302"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="POST cadastrar produtos">Tests.POST cadastrar produtos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
