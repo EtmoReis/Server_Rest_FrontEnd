@@ -4,7 +4,7 @@ Resource  ../resources/acess_serverest.resource
 Resource  ../resources/deletar_usuario.resource
 
 *** Test Cases ***
-CT01- DELETE USER ServeRest
+  CT01- DELETE USER ServeRest
   Step 1 -Acess page creat user ServeRest
   Step 2 - Create New User Full Name
   Step 3 - Create New User Mail
@@ -16,4 +16,4 @@ CT01- DELETE USER ServeRest
   Step 9- Create New Password
   Step 10- Select ADM
   Step 11- Creat New
-   Step 12- Delete user 
+  Step 12- Delete user 

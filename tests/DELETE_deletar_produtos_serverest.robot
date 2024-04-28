@@ -8,7 +8,7 @@ Resource  ../resources/cadastrar_produtos.resource
 
 
 *** Test Cases ***
-CT01- DELETE Produtos ServeRest
+  CT01- DELETE Produtos ServeRest
   Step 1 -Acess page creat user ServeRest
   Step 2 - Create New User Full Name
   Step 3 - Create New User Mail

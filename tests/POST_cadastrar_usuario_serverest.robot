@@ -15,4 +15,3 @@ CT01- ACESSAR ServeRest
   Step 9- Create New Password
   Step 10- Select ADM
   Step 11- Creat New
-  Step 12- Verify Create user is true
