@@ -2,3 +2,21 @@
 **.xml
 /resultados
 .log
+# Arquivos HTML
+*.html
+
+# Diretórios relacionados a dependências e ambiente de desenvolvimento
+node_modules/
+bower_components/
+
+# Arquivos de logs
+*.log
+
+# Arquivos de compilação ou construção
+/dist/
+/build/
+
+# Arquivos de cache e temporários
+.cache/
+.tmp/
+.temp/
